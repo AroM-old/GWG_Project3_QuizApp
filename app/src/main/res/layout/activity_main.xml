@@ -3,31 +3,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
+    android:padding="8dp"
     tools:context=".MainActivityQuiz">
-    
+
+    <!--TODO Add a header with a drone logo reference-->
+    <!--TODO Keep styling the views check on horizontal view-->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <!--Question No.1 Start-->
+        <!--Question No.1 Start // Answer is "Hobbyist"-->
         <TextView
+            style="@style/primaryTextColor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Q1" />
 
         <EditText
             android:id="@+id/Q1_Ans1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
             android:hint="@string/Placeholder"
             android:inputType="text" />
         <!--Question No.1 End-->
 
-        Question No.2 Start
+        <!--TODO Add a line between questions-->
+
+        <!--Question No.2 Start // Answers is 2001-->
         <TextView
+            style="@style/primaryTextColor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Q2" />
@@ -38,28 +45,35 @@
             android:orientation="horizontal">
 
             <RadioButton
-                android:layout_width="wrap_content"
+                style="@style/primaryTextColor"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/Q2_Ans1" />
 
             <RadioButton
                 android:id="@+id/Q2_Ans2"
-                android:layout_width="wrap_content"
+                style="@style/primaryTextColor"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/Q2_Ans2" />
 
             <RadioButton
-                android:layout_width="wrap_content"
+                style="@style/primaryTextColor"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/Q2_Ans3" />
         </RadioGroup>
         <!--Question No.2 End-->
 
         <!--Question No.3 Start-->
         <TextView
+            style="@style/primaryTextColor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Q3" />
+            android:text="@string/Q7" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -68,190 +82,246 @@
 
             <CheckBox
                 android:id="@+id/checkbox_ans1"
-                android:layout_width="wrap_content"
+                style="@style/primaryTextColor"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/Q3_Ans1" />
+                android:layout_weight="1"
+                android:text="200 feet" />
 
             <CheckBox
                 android:id="@+id/checkbox_ans2"
-                android:layout_width="wrap_content"
+                style="@style/primaryTextColor"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/Q3_Ans2" />
+                android:layout_weight="1"
+                android:text="61 meters" />
 
             <CheckBox
                 android:id="@+id/checkbox_ans3"
-                android:layout_width="wrap_content"
+                style="@style/primaryTextColor"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/Q3_Ans3" />
+                android:layout_weight="1"
+                android:text="600 feet" />
         </LinearLayout>
         <!--Question No.3 End-->
 
         <!--Question No.4 Start-->
         <TextView
+            style="@style/primaryTextColor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Q4" />
 
-        <EditText
-            android:id="@+id/Q4_Ans1"
-            android:layout_width="wrap_content"
+        <RadioGroup
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/Placeholder"
-            android:inputType="text" />
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/doritos" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/Q4_Ans2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/beerbottle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/pizzabox" />
+            </LinearLayout>
+
+        </RadioGroup>
         <!--Question No.4 End-->
 
         <!--&lt;!&ndash;Question No.5 Start&ndash;&gt;-->
         <!--<TextView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="@string/Q5" />-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/Q5" />-->
 
         <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:orientation="vertical">-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
 
-            <!--<CheckBox-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="@string/Q5_Ans1" />-->
+        <!--<CheckBox-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/Q5_Ans1" />-->
 
-            <!--<CheckBox-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="@string/Q5_Ans2" />-->
+        <!--<CheckBox-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/Q5_Ans2" />-->
 
-            <!--<CheckBox-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="@string/Q5_Ans3" />-->
+        <!--<CheckBox-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/Q5_Ans3" />-->
 
         <!--</LinearLayout>-->
         <!--&lt;!&ndash;Question No.5 End&ndash;&gt;-->
 
         <!--&lt;!&ndash;Question No.6 Start&ndash;&gt;-->
         <!--<TextView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="@string/Q6" />-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/Q6" />-->
 
         <!--<RadioGroup-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:orientation="horizontal">-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
 
-            <!--<RadioButton-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="@string/Q6_Ans1" />-->
+        <!--<RadioButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/Q6_Ans1" />-->
 
-            <!--<RadioButton-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="@string/Q6_Ans2" />-->
+        <!--<RadioButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/Q6_Ans2" />-->
         <!--</RadioGroup>-->
         <!--&lt;!&ndash;Question No.6 End&ndash;&gt;-->
 
         <!--&lt;!&ndash;Question No.7 Start&ndash;&gt;-->
         <!--<TextView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="@string/Q7" />-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/Q7" />-->
 
         <!--<EditText-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:hint="@string/Placeholder"-->
-            <!--android:inputType="text" />-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="@string/Placeholder"-->
+        <!--android:inputType="text" />-->
         <!--&lt;!&ndash;Question No.7 End&ndash;&gt;-->
 
         <!--&lt;!&ndash;Question No.8 Start&ndash;&gt;-->
         <!--<TextView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="@string/Q8" />-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/Q8" />-->
 
         <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:orientation="horizontal">-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="horizontal">-->
 
-            <!--<CheckBox-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="@string/Q8_Ans1" />-->
+        <!--<CheckBox-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/Q8_Ans1" />-->
 
-            <!--<CheckBox-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="@string/Q8_Ans2" />-->
+        <!--<CheckBox-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/Q8_Ans2" />-->
 
-            <!--<CheckBox-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="@string/Q8_Ans3" />-->
+        <!--<CheckBox-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/Q8_Ans3" />-->
         <!--</LinearLayout>-->
         <!--&lt;!&ndash;Question No.8 End&ndash;&gt;-->
 
         <!--&lt;!&ndash;Question No.9 Start&ndash;&gt;-->
         <!--<TextView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="@string/Q9" />-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/Q9" />-->
 
         <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:orientation="horizontal">-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="horizontal">-->
 
-            <!--<Button-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="@string/Q9_Ans1"-->
-                <!--style="@style/Button_ans"/>-->
+        <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/Q9_Ans1"-->
+        <!--style="@style/Button_ans"/>-->
 
-            <!--<Button-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="@string/Q9_Ans2"-->
-                <!--style="@style/Button_ans"/>-->
+        <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/Q9_Ans2"-->
+        <!--style="@style/Button_ans"/>-->
 
-            <!--<Button-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="@string/Q9_Ans3"-->
-                <!--style="@style/Button_ans"/>-->
+        <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/Q9_Ans3"-->
+        <!--style="@style/Button_ans"/>-->
         <!--</LinearLayout>-->
         <!--&lt;!&ndash;Question No.9 End&ndash;&gt;-->
 
         <!--&lt;!&ndash;Question No.10 Start&ndash;&gt;-->
         <!--<TextView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="@string/Q10" />-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/Q10" />-->
 
         <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:orientation="horizontal">-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="horizontal">-->
 
-            <!--<Button-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="@string/Q10_Ans1"-->
-                <!--style="@style/Button_ans"/>-->
+        <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/Q10_Ans1"-->
+        <!--style="@style/Button_ans"/>-->
 
-            <!--<Button-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="@string/Q10_Ans2"-->
-                <!--style="@style/Button_ans"/>-->
+        <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/Q10_Ans2"-->
+        <!--style="@style/Button_ans"/>-->
 
-            <!--<Button-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="@string/Q10_Ans3"-->
-                <!--style="@style/Button_ans"/>-->
+        <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/Q10_Ans3"-->
+        <!--style="@style/Button_ans"/>-->
         <!--</LinearLayout>-->
         <!--&lt;!&ndash;Question No.10 End&ndash;&gt;-->
 
@@ -259,23 +329,25 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="25dp"
             android:gravity="center"
-            android:layout_margin="30dp"
-            android:orientation="horizontal">
+            android:orientation="vertical">
+
+            <!--TODO add icon on the left side of the button-->
+            <Button
+                style="@style/buttons"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/button_reset"
+                android:onClick="resetScreen"/>
 
             <Button
                 android:id="@+id/submit_button"
-                android:layout_width="wrap_content"
+                style="@style/buttons"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="5dp"
-                android:text="@string/button_submit"
-                android:onClick="answerSubmit"/>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="5dp"
-                android:text="@string/button_reset" />
+                android:onClick="answerSubmit"
+                android:text="@string/button_submit" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

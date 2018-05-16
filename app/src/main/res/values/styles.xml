@@ -1,5 +1,6 @@
 <resources>
 
+    <!--TODO Fix Text colors-->
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
@@ -12,5 +13,27 @@
         <item name="android:layout_margin">5dp</item>
         <item name="android:background">@drawable/button_bg_transparent</item>
     </style>
+    <style name="secondaryTextColor">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/colorSecondaryText</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+    <style name="primaryTextColor">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+    <style name="buttons">
+        <item name="android:textColor">@color/colorTextIcons</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
 
 </resources>

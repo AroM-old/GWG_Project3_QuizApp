@@ -33,4 +33,5 @@ public class MainActivityQuiz extends AppCompatActivity {
             Log.v("Wrong", "Points:" + score);
         }
     }
+
 }
