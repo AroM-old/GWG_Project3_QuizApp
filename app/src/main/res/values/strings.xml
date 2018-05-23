@@ -1,36 +1,29 @@
 <resources>
     <string name="app_name">Drone Quiz App</string>
-    <string name="Q1">1.-What are RTF drones?</string>
+    <string name="question_one">1.-What are RTF drones?</string>
     <string name="Placeholder">Place answer here</string>
-    <string name="Q2">2.In what year did the United States first deploy an armed drone?</string>
-    <string name="Q2_Ans1">1999</string>
-    <string name="Q2_Ans2">2001</string>
-    <string name="Q2_Ans3">2004</string>
-    <string name="Q3">3.Which segment of American society is opposed to the use of the word \'drone\'?</string>
-    <string name="Q3_Ans1">Hobbyist</string>
-    <string name="Q3_Ans2">Regulators</string>
-    <string name="Q3_Ans3">Consumers</string>
-    <string name="Q4">4.-In 2014, entrepreneurs in Minnesota were grounded by the Federal Aviation Administration (FAA) after using drones to deliver what product to fishermen at a local lake?</string>
-    <string name="Q6">6.True or false: Drones are banned at U.S. national parks.</string>
-    <string name="Q6_Ans1">True</string>
-    <string name="Q6_Ans2">False</string>
-    <string name="Q5">5.What are UCAVs?</string>
-    <string name="Q5_Ans1">UAVs Designed for combat</string>
-    <string name="Q5_Ans2">UAVs designed for pesticide application</string>
-    <string name="Q5_Ans3">UAVs designed for oceanography</string>
-    <string name="Q7">3.-As of 2016, the FAA limits consumer drones to what maximum altitude?</string>
-    <string name="Q8">8.Before 2016, the FAA limited drones to what maximum altitude?</string>
-    <string name="Q8_Ans1">100 feet (30 meters)</string>
-    <string name="Q8_Ans2">200 feet</string>
-    <string name="Q8_Ans3">300 feet</string>
-    <string name="Q9">9.Which sort of drone was used in the first-ever UCAV strike in the war in Afghanistan?</string>
-    <string name="Q9_Ans1">Reaper</string>
-    <string name="Q9_Ans2">Predator</string>
-    <string name="Q9_Ans3">X-45</string>
-    <string name="Q10">10.The FAA\'s 2016 regulations rule that consumer drone pilots must be what minimum age?</string>
-    <string name="Q10_Ans1">14 years old</string>
-    <string name="Q10_Ans2">16 years old</string>
-    <string name="Q10_Ans3">18 years old</string>
+
+    <string name="question_two">2.In what year did the United States first deploy an armed drone?</string>
+    <string name="q2_choice_one">1999</string>
+    <string name="q2_choice_two">2001</string>
+    <string name="q2_choice_three">2004</string>
+
+    <string name="question_three">3.-As of 2016, the FAA limits consumer drones to what maximum altitude?</string>
+    <string name="q3_choice_one">200 feet</string>
+    <string name="q3_choice_two">61 meters</string>
+    <string name="q3_choice_three">600 feet</string>
+
+    <string name="question_four">4.-In 2014, entrepreneurs in Minnesota were grounded by the Federal Aviation Administration (FAA) after using drones to deliver what product to fishermen at a local lake?</string>
+
+    <string name="question_five">5.True or false: Drones are banned at U.S. national parks.</string>
+    <string name="q5_choice_one">True</string>
+    <string name="q5_choice_two">False</string>
+
     <string name="button_submit">Submit</string>
     <string name="button_reset">Reset</string>
+
+    <string name="check_submit">Sorry you already submit your answers!</string>
+    <string name="final_score">Your final score: </string>
+
+
 </resources>
