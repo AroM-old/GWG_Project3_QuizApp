@@ -8,189 +8,190 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="6dp"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:scaleType="centerCrop"
-            android:src="@mipmap/drone_image"/>
+            android:src="@mipmap/drone_image" />
 
-        <!--Question No.1 Start // Answer is "Hobbyist"-->
-        <TextView
-            android:id="@+id/q1_txt_view"
-            style="@style/primaryTextColor"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/question_one" />
-
-        <EditText
-            android:id="@+id/q1_answer"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="15dp"
-            android:hint="@string/Placeholder"
-            android:inputType="text" />
-        <!--Question No.1 End-->
-
-        <View
-            style="@style/horizontal_line"/>
-
-        <!--Question No.2 Start // Answers is 2001-->
-        <TextView
-            style="@style/primaryTextColor"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/question_two" />
-
-        <RadioGroup
-            android:id="@+id/q2_radio_group"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <RadioButton
-                android:id="@+id/q2_choice_one"
-                android:layout_height="match_parent"
-                android:layout_width="match_parent"
-                android:layout_weight="1"
-                android:text="@string/q2_choice_one" />
-
-            <RadioButton
-                android:id="@+id/q2_choice_two"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:text="@string/q2_choice_two" />
-
-            <RadioButton
-                android:id="@+id/q2_choice_three"
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                android:text="@string/q2_choice_three" />
-        </RadioGroup>
-        <!--Question No.2 End-->
-
-        <View
-            style="@style/horizontal_line"/>
-
-        <!--Question No.3 Start-->
-        <TextView
-            style="@style/primaryTextColor"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/question_three" />
-
-            <CheckBox
-                android:id="@+id/q3_choice_one"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/q3_choice_one" />
-
-            <CheckBox
-                android:id="@+id/q3_choice_two"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/q3_choice_two" />
-
-            <CheckBox
-                android:id="@+id/q3_choice_three"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/q3_choice_three" />
-        <!--Question No.3 End-->
-
-        <View
-            style="@style/horizontal_line"/>
-
-        <!--Question No.4 Start-->
-        <TextView
-            style="@style/primaryTextColor"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/question_four" />
-
-        <RadioGroup
-            android:id="@+id/q4_radio_group"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-                <RadioButton
-                    android:id="@+id/q4_choice_one"
-                    android:drawableRight="@mipmap/doritos"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-                <RadioButton
-                    android:id="@+id/q4_choice_two"
-                    android:drawableRight="@mipmap/beerbottle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-                <RadioButton
-                    android:id="@+id/q4_choice_three"
-                    android:drawableRight="@mipmap/pizzabox"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-        </RadioGroup>
-        <!--Question No.4 End-->
-
-        <View
-            style="@style/horizontal_line"/>
-
-        <!--Question No.5 Start-->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/primaryTextColor"
-            android:text="@string/question_five"/>
-
-        <RadioGroup
-            android:id="@+id/radioQuestionFive"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <RadioButton
-                android:id="@+id/q5_choice_one"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/q5_choice_one"/>
-
-            <RadioButton
-                android:id="@+id/q5_choice_two"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/q5_choice_two"/>
-        </RadioGroup>
-
-        <!--Question No.5 End-->
-
-        <View
-            style="@style/horizontal_line"/>
-
-        <!--Submit and reset quiz-->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="25dp"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="6dp">
 
-            <Button
-                style="@style/buttons"
+            <!--Question No.1 Start // Answer is "Hobbyist"-->
+            <TextView
+                android:id="@+id/q1_txt_view_rtf_drones"
+                style="@style/primaryTextColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_rtf_drones" />
+
+            <EditText
+                android:id="@+id/editText_rtf_drones"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/button_reset"
-                android:onClick="resetScreen"/>
+                android:layout_marginBottom="15dp"
+                android:hint="@string/Placeholder"
+                android:inputType="text" />
+            <!--Question No.1 End-->
 
-            <Button
-                android:id="@+id/submit_button"
-                style="@style/buttons"
+            <View style="@style/horizontal_line" />
+
+            <!--Question No.2 Start // Answers is 2001-->
+            <TextView
+                style="@style/primaryTextColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_first_deploy_drone" />
+
+            <RadioGroup
+                android:id="@+id/first_radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radio_button_1999"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/q2_choice_1999" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_2001"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q2_choice_2001" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_2004"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q2_choice_2004" />
+            </RadioGroup>
+            <!--Question No.2 End-->
+
+            <View style="@style/horizontal_line" />
+
+            <!--Question No.3 Start-->
+            <TextView
+                style="@style/primaryTextColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_faa_consumer_drones" />
+
+            <CheckBox
+                android:id="@+id/check_box_feet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/q3_choice_200_feet" />
+
+            <CheckBox
+                android:id="@+id/check_box_61_meters"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/q3_choice_61_meters" />
+
+            <CheckBox
+                android:id="@+id/check_box_600_feet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/q3_choice_600_feet" />
+            <!--Question No.3 End-->
+
+            <View style="@style/horizontal_line" />
+
+            <!--Question No.4 Start-->
+            <TextView
+                style="@style/primaryTextColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_entrepreneurs_minesota" />
+
+            <RadioGroup
+                android:id="@+id/second_radio_group"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="answerSubmit"
-                android:text="@string/button_submit" />
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_button_doritos_bag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@mipmap/doritos" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_beers_bottle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@mipmap/beerbottle" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_pizza_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@mipmap/pizzabox" />
+            </RadioGroup>
+            <!--Question No.4 End-->
+
+            <View style="@style/horizontal_line" />
+
+            <!--Question No.5 Start-->
+            <TextView
+                style="@style/primaryTextColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_true_or_false" />
+
+            <RadioGroup
+                android:id="@+id/third_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/radio_button_true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q5_choice_true" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q5_choice_false" />
+            </RadioGroup>
+
+            <!--Question No.5 End-->
+
+            <View style="@style/horizontal_line" />
+
+            <!--Submit and reset quiz-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="25dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    style="@style/buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="resetScreen"
+                    android:text="@string/button_reset" />
+
+                <Button
+                    android:id="@+id/submit_button"
+                    style="@style/buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="answerSubmit"
+                    android:text="@string/button_submit" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

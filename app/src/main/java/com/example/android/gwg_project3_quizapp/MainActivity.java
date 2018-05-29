@@ -12,53 +12,50 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    // TODO Score show up more than once with the variable new value
-    //TODO Fix Variables names
     int score = 0; //Track the score for correct answers
     Boolean checkSubmit;
 
-    EditText editQuestionOne; //Question One
+    EditText editTextRtfDrone; //Question One
 
-    RadioGroup radioQuestionTwo; //Question two radio group
-    RadioButton q2radioChoiceOne; //Question two choice one
-    RadioButton q2radioChoiceTwo; //Question two choice two
-    RadioButton q2radioChoiceThree; //Question two choice three
+    RadioGroup firstRadioGroup; //Question two radio group
+    RadioButton RadioButton1999; //Question two choice one
+    RadioButton RadioButton2001; //Question two choice two
+    RadioButton RadioButton2004; //Question two choice three
 
-    CheckBox checkboxChoiceOne; //Question three choice one
-    CheckBox checkboxChoiceTwo; //Question three choice two
-    CheckBox checkboxChoiceThree; //Question three choice three
+    CheckBox checkbox200Feet; //Question three choice one
+    CheckBox checkbox61Meters; //Question three choice two
+    CheckBox checkbox600Feet; //Question three choice three
 
-    RadioGroup radioQuestionFour; //Question four radio group
-    RadioButton q4radioChoiceOne; //Question four choice one
-    RadioButton q4radioChoiceTwo; //Question four choice two
-    RadioButton q4radioChoiceThree; //Question four choice three
+    RadioGroup SecondRadioGroup; //Question four radio group
+    RadioButton RadioButtonDoritosBag; //Question four choice one
+    RadioButton RadioButtonBeerBottle; //Question four choice two
+    RadioButton RadioButtonPizzaBox; //Question four choice three
 
-    RadioGroup radioQuestionFive; //Question five radio group
-    RadioButton q5_choice_one; //Question five choice one
-    RadioButton q5_choice_two; //Question five choice two
-
-
+    RadioGroup ThirdRadioGroup; //Question five radio group
+    RadioButton RadioButtonTrue; //Question five choice one
+    RadioButton RadioButtonFalse; //Question five choice two
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        editQuestionOne = findViewById(R.id.q1_answer);
-        radioQuestionTwo = findViewById(R.id.q2_radio_group);
-        q2radioChoiceOne = findViewById(R.id.q2_choice_one);
-        q2radioChoiceTwo = findViewById(R.id.q2_choice_two);
-        q2radioChoiceThree = findViewById(R.id.q2_choice_three);
-        checkboxChoiceOne  = findViewById(R.id.q3_choice_one);
-        checkboxChoiceTwo = findViewById(R.id.q3_choice_two);
-        checkboxChoiceThree = findViewById(R.id.q3_choice_three);
-        radioQuestionFour = findViewById(R.id.q4_radio_group);
-        q4radioChoiceOne = findViewById(R.id.q4_choice_one);
-        q4radioChoiceTwo = findViewById(R.id.q4_choice_two);
-        q4radioChoiceThree = findViewById(R.id.q4_choice_three);
-        radioQuestionFive = findViewById(R.id.radioQuestionFive);
-        q5_choice_one = findViewById(R.id.q5_choice_one);
-        q5_choice_two = findViewById(R.id.q5_choice_two);
+
+        editTextRtfDrone = findViewById(R.id.editText_rtf_drones);
+        firstRadioGroup = findViewById(R.id.first_radio_group);
+        RadioButton1999 = findViewById(R.id.radio_button_1999);
+        RadioButton2001 = findViewById(R.id.radio_button_2001);
+        RadioButton2004 = findViewById(R.id.radio_button_2004);
+        checkbox200Feet = findViewById(R.id.check_box_feet);
+        checkbox61Meters = findViewById(R.id.check_box_61_meters);
+        checkbox600Feet = findViewById(R.id.check_box_600_feet);
+        SecondRadioGroup = findViewById(R.id.second_radio_group);
+        RadioButtonDoritosBag = findViewById(R.id.radio_button_doritos_bag);
+        RadioButtonBeerBottle = findViewById(R.id.radio_button_beers_bottle);
+        RadioButtonPizzaBox = findViewById(R.id.radio_button_pizza_box);
+        ThirdRadioGroup = findViewById(R.id.third_radio_group);
+        RadioButtonTrue = findViewById(R.id.radio_button_true);
+        RadioButtonFalse = findViewById(R.id.radio_button_false);
 
         checkSubmit = false;
     }
@@ -66,47 +63,46 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Check for every answered
      * questions and add the score
-     * */
+     */
     public void answerSubmit(View view) {
 
         /**
          * Question No.1
-         * Correct Answer hobbyist
+         * Correct Answer "hobbyist"
          * */
-        String checkQ1 = editQuestionOne.getText().toString();
-        if (checkQ1.equalsIgnoreCase("hobbyist")) {
+        String checkAnswerQuestion1 = editTextRtfDrone.getText().toString();
+        if (checkAnswerQuestion1.equalsIgnoreCase("hobbyist")) {
             score += 1;
         }
         /**
          * Question No.2
-         * Correct Answer 2001
+         * Correct Answer "2001"
          * */
-        if (q2radioChoiceTwo.isChecked()) {
+        if (RadioButton2001.isChecked()) {
             score += 1;
         }
 
         /**
          * Question No.3
-         * Correct Answers 200 feet & 61 meters
+         * Correct Answers "200 feet && 61 meters"
          * */
-        // TODO Score give points when user select just one checkbox
-        if (checkboxChoiceOne.isChecked() && checkboxChoiceTwo.isChecked()) {
+        if (checkbox200Feet.isChecked() && checkbox61Meters.isChecked() && !checkbox600Feet.isChecked()) {
             score += 1;
         }
 
         /**
          * Question No.4
-         * Correct Answer beers
+         * Correct Answer "beer bottle"
          * */
-        if (q4radioChoiceTwo.isChecked()){
+        if (RadioButtonBeerBottle.isChecked()) {
             score += 1;
         }
 
         /**
          * Question No.5
-         * Correct Answer True
+         * Correct Answer "True"
          * */
-        if (q5_choice_one.isChecked()){
+        if (RadioButtonTrue.isChecked()) {
             score += 1;
         }
 
@@ -117,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
     private void showToast() {
         if (checkSubmit) {
             Toast.makeText(this, getString(R.string.check_submit), Toast.LENGTH_LONG).show();
-        }else {
+        } else {
 
             Toast.makeText(this, getString(R.string.final_score) + score, Toast.LENGTH_LONG).show();
             checkSubmit = true;
@@ -126,16 +122,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Reset all variables and scores.
-    public void resetScreen(View view){
+    public void resetScreen(View view) {
         score = 0;
         checkSubmit = false;
-        editQuestionOne.setText("");
-        radioQuestionTwo.clearCheck();
-        radioQuestionFour.clearCheck();
-        radioQuestionFive.clearCheck();
-        checkboxChoiceOne.setChecked(false);
-        checkboxChoiceTwo.setChecked(false);
-        checkboxChoiceThree.setChecked(false);
+        editTextRtfDrone.setText("");
+        firstRadioGroup.clearCheck();
+        SecondRadioGroup.clearCheck();
+        ThirdRadioGroup.clearCheck();
+        checkbox200Feet.setChecked(false);
+        checkbox61Meters.setChecked(false);
+        checkbox600Feet.setChecked(false);
 
     }
 }

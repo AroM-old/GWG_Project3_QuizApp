@@ -1,23 +1,23 @@
 <resources>
     <string name="app_name">Drone Quiz App</string>
-    <string name="question_one">1.-What are RTF drones?</string>
+    <string name="question_rtf_drones">1.-What are RTF drones?</string>
     <string name="Placeholder">Place answer here</string>
 
-    <string name="question_two">2.In what year did the United States first deploy an armed drone?</string>
-    <string name="q2_choice_one">1999</string>
-    <string name="q2_choice_two">2001</string>
-    <string name="q2_choice_three">2004</string>
+    <string name="question_first_deploy_drone">2.In what year did the United States first deploy an armed drone?</string>
+    <string name="q2_choice_1999">1999</string>
+    <string name="q2_choice_2001">2001</string>
+    <string name="q2_choice_2004">2004</string>
 
-    <string name="question_three">3.-As of 2016, the FAA limits consumer drones to what maximum altitude?</string>
-    <string name="q3_choice_one">200 feet</string>
-    <string name="q3_choice_two">61 meters</string>
-    <string name="q3_choice_three">600 feet</string>
+    <string name="question_faa_consumer_drones">3.-As of 2016, the FAA limits consumer drones to what maximum altitude?</string>
+    <string name="q3_choice_200_feet">200 feet</string>
+    <string name="q3_choice_61_meters">61 meters</string>
+    <string name="q3_choice_600_feet">600 feet</string>
 
-    <string name="question_four">4.-In 2014, entrepreneurs in Minnesota were grounded by the Federal Aviation Administration (FAA) after using drones to deliver what product to fishermen at a local lake?</string>
+    <string name="question_entrepreneurs_minesota">4.-In 2014, entrepreneurs in Minnesota were grounded by the Federal Aviation Administration (FAA) after using drones to deliver what product to fishermen at a local lake?</string>
 
-    <string name="question_five">5.True or false: Drones are banned at U.S. national parks.</string>
-    <string name="q5_choice_one">True</string>
-    <string name="q5_choice_two">False</string>
+    <string name="question_true_or_false">5.True or false: Drones are banned at U.S. national parks.</string>
+    <string name="q5_choice_true">True</string>
+    <string name="q5_choice_false">False</string>
 
     <string name="button_submit">Submit</string>
     <string name="button_reset">Reset</string>
